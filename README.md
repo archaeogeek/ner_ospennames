@@ -7,7 +7,7 @@ Prep your osopennames data using something resembling the process here: https://
 
 ## Setup
 
-Download this repository and create virtual environment:
+Download or clone this repository.Note that if you receive errors relating to Git LFS you may need to install it- see https://git-lfs.github.com/ for instructions, and then additionally run 'git lfs pull' after cloning or pulling. Then set up a virtual environment, activate it, and install the requirements.
 
 ```
 python3 -m venv .
@@ -17,6 +17,13 @@ pip install -r requirements.txt
 ```
 
 ## To run
+
+Download the standard model:
+
+```
+python3 -m spacy download en_core_web_sm
+
+```
 
 Assuming you followed the linked gist to prepare your osopennames data and it's in this folder as 'mergednameonly.jsonl' load the pipeline and then test it: 
 
